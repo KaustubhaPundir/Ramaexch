@@ -1,0 +1,154 @@
+:root{
+  --primary-background: #252729;
+}
+body {
+  overflow: hidden !important;
+  background-color:#252729;
+  height: 100vh;
+
+}
+header {
+  /* position: fixed; */
+  background-color:#202020;
+  box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+  height: auto;
+  z-index: 1001 !important;
+}
+
+.logo {
+  width: 140px;
+  height: 45px;
+}
+
+.searchbu {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 0px;
+}
+
+.searchbar {
+  height: 35px;
+  border-radius: 0px;
+  border-color: gray;
+}
+
+.searchbar::placeholder {
+  color: white;
+}
+
+.avl {
+  line-height: 13px;
+  padding: 1px 8px;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  width: 75px;
+  border-radius: 4px;
+}
+
+.exposure {
+  border-radius: 4px;
+  line-height: 13px;
+  color: white;
+  background-color: red;
+  padding: 1px 8px;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 12px;
+  height: 30px;
+  width: 90px;
+}
+
+.account {}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.marque {
+  float: left;
+  padding: 0 3px !important;
+  color: #fff !important;
+  min-width: 32px;
+  display: block;
+  line-height: 70px;
+  text-align: center;
+  max-height: 70px;
+  position: relative;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.text-red{
+  color: red;
+}
+.sidebar{
+  height: 100vh !important;
+  background: #1a1a1a !important;
+  box-shadow: 2px 0 10px 0 #111111;
+}
+.bordersm{
+  border-top: 1px solid rgb(38, 38, 38) !important;
+}

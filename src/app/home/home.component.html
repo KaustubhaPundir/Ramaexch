@@ -1,0 +1,168 @@
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a href="/" class="d-flex align-items-center md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="/assets/logo.png" alt="logo" class="logo">
+        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-mic mic"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+          <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3" />
+        </svg>
+        <marquee width="40%" direction="left" height="40px" class="d-flex align-items-center marque">
+          🃏Live Casino Games , 🛩️Aviator , 💣Mines , 🏏CricketCrash , ⚽SoccerCrash , Try Our New Games...
+        </marquee>
+        <form class="d-flex justify-content-center align-items-center mx-5" role="search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="35" fill="currentColor"
+            class="bi bi-search bg-dark text-white searchbu" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+          <input class="form-control me-2 mr-5 pr-5 bg-dark text-white searchbar" type="search"
+            placeholder="Search Events....." aria-label="Search">
+        </form>
+        <form class="d-flex justify-content-center align-items-center float-right" role="search">
+          <button class="btn avl m-1 fw-bolder" type="button">AVL.BAL<br>0</button>
+          <button class="btn exposure m-1 fw-bolder" type="button">EXPOSURE<br>0</button>
+          <img src="assets/profile-desktop.png" alt="" class="account m-1" height="35px">
+          <label class="switch m-1">
+            <input type="checkbox" title="mode">
+            <span class="slider round"></span>
+          </label>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar col-md-3 col-lg-2 p-0 bg-body-dark">
+        <div class="offcanvas-md offcanvas-end bg-body-dark" tabindex="-1" id="sidebarMenu"
+          aria-labelledby="sidebarMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <ul class="list-unstyled ps-0 mx-1 my-2">
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-red"
+                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                  My Market
+                </button>
+                <div class="collapse" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Favourite
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#exchange" aria-expanded="false">
+                 Exchange
+                </button>
+                <div class="collapse" id="exchange">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#aviator" aria-expanded="false">
+                  Aviator
+                </button>
+                <div class="collapse" id="aviator">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#live" aria-expanded="false">
+                  Live Casino
+                </button>
+                <div class="collapse" id="live">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#indian" aria-expanded="false">
+                  Indian Games
+                </button>
+                <div class="collapse" id="indian">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#virtual" aria-expanded="false">
+                  Virtual Sports
+                </button>
+                <div class="collapse" id="virtual">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1 bordersm">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+                  data-bs-toggle="collapse" data-bs-target="#others" aria-expanded="false">
+                 Others
+                </button>
+                <div class="collapse" id="others">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        
+      </main>
+    </div>
+  </div>
+
+</body>
