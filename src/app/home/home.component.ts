@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { DarkmodeService } from '../darkmode.service';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  darkModeService: DarkmodeService = inject(DarkmodeService);
+
+  toggleDarkMode() {
+    this.darkModeService.updateDarkMode();
+  }
 
 }
