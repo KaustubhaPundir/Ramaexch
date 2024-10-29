@@ -8,8 +8,43 @@
                 </a>
 
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link download" aria-current="page">DOWNLOAD APP</a></li>
-                    <li class="nav-item mx-1"><a routerLink="/cricket" class="nav-link login">LOGIN</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link download" aria-current="page">DOWNLOAD APP</a></li>
+                    <li class="nav-item mx-1"><a routerLink="/cricket" class="nav-link login">LOGIN</a></li> -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark download" data-toggle="modal" data-target="">
+                        DOWNLOAD APP
+                    </button>
+                    <button type="button" class="btn btn-dark login" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                        LOGIN
+                    </button>
+                    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <div class="myform bg-dark">
+                                        <h1 class="text-center">Login Form</h1>
+                                        <form>
+                                            <div class="mb-3 mt-4">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                            <p>Not a member? <a href="#">Signup now</a></p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -741,7 +776,8 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm justify-content-center align-items-center">
-                                <img class="img-fluid" src="/assets/pragmatic-play.jpg" alt="" width="100%" height="225">
+                                <img class="img-fluid" src="/assets/pragmatic-play.jpg" alt="" width="100%"
+                                    height="225">
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-dark button-slanted px-4 alb-but fw-bolder"
                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
@@ -936,7 +972,8 @@
         </section>
         <section class="section3 bg-dark text-center">
             <h1 class="text-white py-3 pt-5">OUR SUPPORT 24X7 WHEN YOU ARE STUCK RARELY</h1>
-            <p class="text-white py-3 pb-5">If you're having trouble in you <b class="red">RamaExch</b> APP,<br>We can help you troubleshoot a wide variety of issues</p>
+            <p class="text-white py-3 pb-5">If you're having trouble in you <b class="red">RamaExch</b> APP,<br>We can
+                help you troubleshoot a wide variety of issues</p>
         </section>
     </main>
     <footer class="p-0 m-0 d-flex align-items-center justify-content-center">
@@ -953,9 +990,9 @@
                 <img src="assets/facebook.webp" class="img-fluid" title="faceimg" width="29px"></a>
             <a target="_blank" href="https://www.instagram.com/theramaexch/">
                 <img src="assets/instagram.webp" class="img-fluid" title="instaimg" width="29px"></a>
-            </div>
-            <span class="help-title text-white"> Helpline </span>
         </div>
+        <span class="help-title text-white"> Helpline </span>
+    </div>
     <script>
         var myModal = document.getElementById('myModal')
         var myInput = document.getElementById('myInput')
