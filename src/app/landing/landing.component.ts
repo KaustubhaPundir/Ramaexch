@@ -18,6 +18,8 @@ export class LandingComponent {
   email = "";
   pass = "";
   colorFlag = 'white';
+  hidden='block';
+  hidden2='none';
   constructor(private http: HttpClient) {
   }
   public postData(data: any): Observable<any> {
@@ -29,6 +31,15 @@ export class LandingComponent {
   public change(){
     this.colorFlag='red';
   }
+  public hideun(){
+    this.hidden='none';
+    this.hidden2='block';
+  }
+  public unhide(){
+    this.hidden='block';
+    this.hidden2='none';
+  }
+  user=-1;
   onsub(form: NgForm) {
     this.email = form.value.email;
     this.pass = form.value.pass;
@@ -44,6 +55,7 @@ export class LandingComponent {
           if (this.email == resp[i].email) {
             if (this.pass == resp[i].pass) {
               console.log("login successfull");
+              this.user=i;
             }
           }
           else {

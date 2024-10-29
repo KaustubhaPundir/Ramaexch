@@ -15,7 +15,7 @@
                     <button type="button" class="btn btn-dark download" data-toggle="modal" data-target="">
                         DOWNLOAD APP
                     </button>
-                    <button type="button" class="btn btn-dark login" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                    <button type="button" class="btn btn-dark login" data-bs-toggle="modal" data-bs-target="#ModalForm" (click)="unhide()">
                         LOGIN
                     </button>
                     <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
@@ -25,7 +25,7 @@
                                 <div class="modal-body">
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
-                                    <div class="myform bg-dark">
+                                    <div class="myform bg-dark" [ngStyle]="{display:hidden}">
                                         <h1 class="text-center">Login Form</h1>
                                         <form #myform="ngForm" (ngSubmit)="onsub(myform)">
                                             <div class="mb-3 mt-4">
@@ -37,9 +37,24 @@
                                                 <label for="exampleInputPassword1" class="form-label" [ngStyle]="{ color: colorFlag }">Password</label>
                                                 <input type="password" class="form-control" name="pass" id="pass" ngModel>
                                             </div>
-                                            <button type="submit" class="btn btn-light mt-3" (click)="change()">LOGIN</button>
-                                            <p>Not a member? <a href="#">Signup now</a></p>
+                                            <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                            <p>Not a member? <button (click)="hideun()">Signup now</button></p>
                                         </form>
+                                        <div class="myform bg-dark" [ngStyle]="{display:hidden2}">
+                                            <h1 class="text-center">Signup Form</h1>
+                                            <form>
+                                                <div class="mb-3 mt-4">
+                                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <button type="submit" class="btn btn-light mt-3">Signup</button>
+                                                
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
