@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -20,7 +20,7 @@ export class LandingComponent {
   colorFlag = 'white';
   hidden='block';
   hidden2='none';
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,private router:Router) {
   }
   public postData(data: any): Observable<any> {
     return this.http.post<any>("http://localhost:3000/user", data);
@@ -40,7 +40,7 @@ export class LandingComponent {
     this.hidden2='none';
   }
   user=-1;
-  onsub(form: NgForm) {
+  public onsub(form: NgForm) {
     this.email = form.value.email;
     this.pass = form.value.pass;
     // const data={email:this.email,pass:this.pass};
@@ -56,6 +56,7 @@ export class LandingComponent {
             if (this.pass == resp[i].pass) {
               console.log("login successfull");
               this.user=i;
+              this.router.navigateByUrl("/cricket");
             }
           }
           else {
@@ -64,6 +65,16 @@ export class LandingComponent {
           }
         }
       }
+    )
+  }
+  public onsub2(form2: NgForm) {
+    this.email = form2.value.email;
+    this.pass = form2.value.pass;
+    const data={email:this.email,pass:this.pass};
+    this.postData(data).subscribe((result: any)=>
+    {
+      console.log(result);
+    }
     )
   }
   
