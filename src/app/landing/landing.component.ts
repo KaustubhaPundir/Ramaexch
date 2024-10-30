@@ -6,6 +6,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-landing',
@@ -15,6 +16,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrl: './landing.component.css'
 })
 export class LandingComponent {
+  login: LoginService = inject(LoginService);
   email = "";
   pass = "";
   colorFlag = 'white';
@@ -39,7 +41,6 @@ export class LandingComponent {
     this.hidden='block';
     this.hidden2='none';
   }
-  user=-1;
   public onsub(form: NgForm) {
     this.email = form.value.email;
     this.pass = form.value.pass;
@@ -54,9 +55,9 @@ export class LandingComponent {
         for (let i = 0; i < resp.length; i++) {
           if (this.email == resp[i].email) {
             if (this.pass == resp[i].pass) {
-              console.log("login successfull");
-              this.user=i;
-              this.router.navigateByUrl("/cricket");
+              alert("login successfull");
+              this.login.updateuserindex(resp[i].id);
+              this.router.navigateByUrl("cricket");
             }
           }
           else {
