@@ -28,12 +28,28 @@
                 <form class="d-flex justify-content-center align-items-center float-right" role="search">
                     <button class="btn avl m-1 fw-bolder" type="button">AVL.BAL<br>0</button>
                     <button class="btn exposure m-1 fw-bolder" type="button">EXPOSURE<br>0</button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="white"
+                    <button class="btn btn-dark p-0 m-0 bg-dark" data-bs-toggle="modal" data-bs-target="#ModalForm"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="white"
                         class="bi bi-person-circle m-1" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                         <path fill-rule="evenodd"
                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
+                    </svg></button>
+                    <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <div class="bg-dark">
+                                        <p class="text-white text-center">{{own.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <label class="switch m-1">
                         <input type="checkbox" title="mode">
                         <span (click)="toggleDarkMode()" class="slider round"></span>
