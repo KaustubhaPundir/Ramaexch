@@ -75,6 +75,8 @@ export class LandingComponent {
     this.postData(data).subscribe((result: any)=>
     {
       console.log(result);
+      alert("signup successfull");
+      this.router.navigateByUrl("landing");
     }
     )
   }

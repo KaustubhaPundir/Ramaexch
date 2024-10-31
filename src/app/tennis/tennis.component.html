@@ -28,15 +28,16 @@
                 <form class="d-flex justify-content-center align-items-center float-right" role="search">
                     <button class="btn avl m-1 fw-bolder" type="button">AVL.BAL<br>0</button>
                     <button class="btn exposure m-1 fw-bolder" type="button">EXPOSURE<br>0</button>
-                    <button class="btn btn-dark p-0 m-0 bg-dark" data-bs-toggle="modal" data-bs-target="#ModalForm"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="white"
-                        class="bi bi-person-circle m-1" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg></button>
+                    <button class="btn btn-dark p-0 m-0 bg-dark border-0" data-bs-toggle="modal" data-bs-target="#ModalForm"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="white"
+                            class="bi bi-person-circle m-1" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg></button>
                     <!-- Button trigger modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content bg-dark">
@@ -334,10 +335,11 @@
                                                                 <div class="col-2 col-xs-none text-center"> x </div>
                                                                 <div class="col-2 col-xs-none text-center"> 2 </div>
                                                             </div>
-                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1">
+                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1"
+                                                                *ngFor="let item of own.Tennis">
                                                                 <div class="col-md-2 col-12 text-center">
                                                                     <p class="text-white"><b>
-                                                                            {{own.Tennis[0].date}}<time> {{own.Tennis[0].time}}
+                                                                            {{item.date}}<time> {{item.time}}
                                                                             </time>
                                                                         </b>
 
@@ -346,103 +348,21 @@
 
                                                                 </div>
                                                                 <div class="col-md-4 col-12 text-center">
-                                                                    <p class="text-white"> {{own.Tennis[0].schedule}}.......In-Play
+                                                                    <p class="text-white">
+                                                                        {{item.schedule}}.......In-Play
                                                                     </p>
                                                                 </div>
-                                                                <!-- <div
-                                                                    class="col-md-1 col-6 align-self-center text-right px-0">
-                                                                    <div><span class="mr-1 ytvIcon"><i
-                                                                                class="mdi mdi-youtube-tv"></i></span>
-                                                                    </div>
-                                                                </div> -->
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[0].x[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[0].x[1]}}</button>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.x}}</button><button
+                                                                        class="red-area">{{item.x}}</button>
                                                                 </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[0].y[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[0].y[1]}}</button>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.y}}</button><button
+                                                                        class="red-area">{{item.y}}</button>
                                                                 </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[0].z[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[0].z[1]}}</button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1">
-                                                                <div class="col-md-2 col-12 text-center">
-                                                                    <p class="text-white"><b>
-                                                                            {{own.Tennis[1].date}}<time> {{own.Tennis[1].time}}
-                                                                            </time>
-                                                                        </b>
-
-
-                                                                    </p>
-
-                                                                </div>
-                                                                <div class="col-md-4 col-12 text-center">
-                                                                    <p class="text-white"> {{own.Tennis[1].schedule}}.......In-Play
-                                                                    </p>
-                                                                </div>
-                                                                <!-- <div
-                                                                    class="col-md-1 col-6 align-self-center text-right px-0">
-                                                                    <div><span class="mr-1 ytvIcon"><i
-                                                                                class="mdi mdi-youtube-tv"></i></span>
-                                                                    </div>
-                                                                </div> -->
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[1].x[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[1].x[1]}}</button>
-                                                                </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[1].y[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[1].y[1]}}</button>
-                                                                </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[1].z[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[1].z[1]}}</button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1">
-                                                                <div class="col-md-2 col-12 text-center">
-                                                                    <p class="text-white"><b>
-                                                                            {{own.Tennis[2].date}}<time> {{own.Tennis[2].time}}
-                                                                            </time>
-                                                                        </b>
-
-
-                                                                    </p>
-
-                                                                </div>
-                                                                <div class="col-md-4 col-12 text-center">
-                                                                    <p class="text-white"> {{own.Tennis[2].schedule}}.......In-Play
-                                                                    </p>
-                                                                </div>
-                                                                <!-- <div
-                                                                    class="col-md-1 col-6 align-self-center text-right px-0">
-                                                                    <div><span class="mr-1 ytvIcon"><i
-                                                                                class="mdi mdi-youtube-tv"></i></span>
-                                                                    </div>
-                                                                </div> -->
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[2].x[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[2].x[1]}}</button>
-                                                                </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[2].y[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[2].y[1]}}</button>
-                                                                </div>
-                                                                <div
-                                                                    class="col-2 col-xs-none text-center">
-                                                                    <button class="blue-area">{{own.Tennis[2].z[0]}}</button><button
-                                                                        class="red-area">{{own.Tennis[2].z[1]}}</button>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.z}}</button><button
+                                                                        class="red-area">{{item.z}}</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -493,12 +413,29 @@
                 <form class="d-flex justify-content-center align-items-center float-right" role="search">
                     <button class="btn avl m-1 fw-bolder" type="button">AVL.BAL<br>0</button>
                     <button class="btn exposure m-1 fw-bolder" type="button">EXPOSURE<br>0</button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="black"
-                        class="bi bi-person-circle m-1" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
+                    <button class="btn btn-dark p-0 m-0 bg-white border-0" data-bs-toggle="modal" data-bs-target="#ModalForm"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="33" height="35" fill="black"
+                            class="bi bi-person-circle m-1" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg></button>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-white">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <div class="bg-white">
+                                        <p class="text-dark text-center">{{own.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <label class="switch m-1">
                         <input type="checkbox" title="mode">
                         <span (click)="toggleDarkMode()" class="slider-dark round"></span>
@@ -782,6 +719,36 @@
                                                                 <div class="col-2 col-xs-none"> 1 </div>
                                                                 <div class="col-2 col-xs-none"> x </div>
                                                                 <div class="col-2 col-xs-none"> 2 </div>
+                                                            </div>
+                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1"
+                                                                *ngFor="let item of own.Tennis">
+                                                                <div class="col-md-2 col-12 text-center">
+                                                                    <p class="text-dark"><b>
+                                                                            {{item.date}}<time> {{item.time}}
+                                                                            </time>
+                                                                        </b>
+
+
+                                                                    </p>
+
+                                                                </div>
+                                                                <div class="col-md-4 col-12 text-center">
+                                                                    <p class="text-dark">
+                                                                        {{item.schedule}}.......In-Play
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.x}}</button><button
+                                                                        class="red-area">{{item.x}}</button>
+                                                                </div>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.y}}</button><button
+                                                                        class="red-area">{{item.y}}</button>
+                                                                </div>
+                                                                <div class="col-2 col-xs-none text-center">
+                                                                    <button class="blue-area">{{item.z}}</button><button
+                                                                        class="red-area">{{item.z}}</button>
+                                                                </div>
                                                             </div>
                                                         </div><!----><!---->
                                                     </div>
