@@ -335,7 +335,7 @@
                                                                 <div class="col-2 col-xs-none text-center"> x </div>
                                                                 <div class="col-2 col-xs-none text-center"> 2 </div>
                                                             </div>
-                                                            <div class="row mx-0 text-capitalize py-1 sport-list bm1"
+                                                            <div class="row g-1 mx-0 text-capitalize py-1 sport-list bm1"
                                                                 *ngFor="let item of own.Tennis">
                                                                 <div class="col-md-2 col-12 text-center">
                                                                     <p class="text-white"><b>
@@ -432,6 +432,9 @@
                                     <div class="bg-white">
                                         <p class="text-dark text-center">{{own.email}}</p>
                                     </div>
+                                    <button type="button" class="btn-warning bg-warning text-white border-0" (click)="logout()">
+                                        Logout
+                                    </button>
                                 </div>
                             </div>
                         </div>

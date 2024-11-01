@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Router,RouterLink, RouterModule } from '@angular/router';
 import { DarkmodeService } from '../darkmode.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -24,7 +24,7 @@ export class TennisComponent {
   public name:any;
   public own:any;
   
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient,private router:Router){
   }
   ngOnInit(): void {
     // this.fetchDetails();
@@ -45,6 +45,11 @@ export class TennisComponent {
         this.own=resp;
       }
     )
+  }
+  public logout(){
+    this.user=null;
+    this.login.resetuser();
+    this.router.navigateByUrl("landing");
   }
 }
 

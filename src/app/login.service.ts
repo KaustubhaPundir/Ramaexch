@@ -11,5 +11,8 @@ export class LoginService {
   getuser(){
     return localStorage.getItem('user');
   }
+  resetuser(){
+    localStorage.clear();
+  }
   constructor() { }
 }
