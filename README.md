@@ -1,4 +1,7 @@
 # RamaExch
+# All rights are  reserved by RS Digitech and the owner of Ramaexch.
+
+For visual purposes visit www.ramaexch.com 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
