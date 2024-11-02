@@ -1,7 +1,9 @@
 # RamaExch
 # All rights are  reserved by RS Digitech and the owner of Ramaexch.
 
-For visual purposes visit www.ramaexch.com 
+This repository demonstrate the contribution to ramaexch done my me as a Frontend Angular and Integration Developer Intern.
+
+For final product which has a contribution of various teammembers of RS Digitech, visit www.ramaexch.com 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
