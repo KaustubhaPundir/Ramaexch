@@ -1,7 +1,7 @@
 # RamaExch
 # All rights are  reserved by RS Digitech and the owner of Ramaexch.
 
-This repository demonstrate the contribution to ramaexch done my me as a Frontend Angular and Integration Developer Intern.
+This repository demonstrate the contribution to ramaexch done my me as a Frontend Angular and Integration Developer Intern in RS Digitech.
 
 For final product which has a contribution of various teammembers of RS Digitech, visit www.ramaexch.com 
 
